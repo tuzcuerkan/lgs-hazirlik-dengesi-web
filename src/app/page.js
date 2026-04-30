@@ -93,22 +93,24 @@ export default function Home() {
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <div>
                 <p className="mb-2 inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-black text-blue-900">
-                  Proje | LGS Hazırlık Dengesi
+                  Samsun Kampüsü • OBİT 2026 Demo Sürümü
                 </p>
-                <h2 className="text-3xl font-black tracking-tight text-slate-950">
-                  Web Paneli
+
+                <h2 className="text-3xl font-black tracking-tight text-slate-950 lg:text-4xl">
+                  Proje | LGS Hazırlık Dengesi
                 </h2>
+
                 <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
-                  LGS hazırlık sürecinde soru çözme, deneme sonucu, motivasyon
-                  ve ders yükü verilerini birlikte analiz eden demo panel.
+                  Öğrenci, veli ve öğretmenler için LGS soru çözme, deneme sonucu,
+                  motivasyon ve ders yükü verilerini birlikte analiz eden web paneli.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:w-[520px]">
                 <MiniStat label="Haftalık Soru" value={totalQuestions} />
                 <MiniStat label="Güçlü Ders" value={strongest.name} />
-                <MiniStat label="Dikkat" value="Türkçe" />
-                <MiniStat label="Durum" value="Dikkat" />
+                <MiniStat label="Desteklenecek Ders" value="Türkçe" />
+                <MiniStat label="Genel Durum" value="Dikkat" />
               </div>
             </div>
 
